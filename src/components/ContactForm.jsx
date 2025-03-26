@@ -57,6 +57,8 @@ const ContactForm = () => {
       <style jsx>{`
         /* Import the exact script font */
         @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+ 
         
         .contact-form-container {
           display: flex;
@@ -66,6 +68,7 @@ const ContactForm = () => {
           background-color: #000000;
           color: #ffffff;
           font-family: sans-serif;
+           
         }
         
         .contact-heading {
