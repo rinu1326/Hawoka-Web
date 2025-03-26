@@ -1,0 +1,129 @@
+/* General Section Styling */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(35, 35, 35);
+    color: white;
+    padding: 80px;
+    position: relative;
+    /* min-height: 100vh; */
+  }
+  
+  /* Text Content */
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .hero-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: rgb(22, 243, 6);
+    color: black;
+  }
+  
+  /* Image Styling */
+  .hero-image img {
+    width: 450px;
+    height: auto;
+    /* border-radius: 50%;
+    border: 5px solid white; */
+  }
+  
+  /* Floating Decorative Element */
+  .floating-element {
+    position: absolute;
+    top: -50px;
+    right: 20%;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(255, 115, 0, 0.8), transparent);
+    border-radius: 50%;
+    filter: blur(50px);
+  }
+  
+  /* RESPONSIVE DESIGN */
+  
+  /* Medium Screens (Tablets) */
+  @media (max-width: 1024px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 50px;
+    }
+  
+    .hero-content {
+      max-width: 90%;
+    }
+  
+    .hero-buttons {
+      justify-content: center;
+    }
+  
+    .hero-image img {
+      width: 350px;
+      margin-top: 20px;
+    }
+  
+    .floating-element {
+      top: -30px;
+      right: 10%;
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  /* Small Screens (Mobile) */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 36px;
+    }
+  
+    .hero-content p {
+      font-size: 14px;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  
+    .hero-image img {
+      width: 280px;
+    }
+  
+    .floating-element {
+      display: none; /* Hide floating element on small screens */
+    }
+  }
+  
